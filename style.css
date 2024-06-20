@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* ========================================
+    レイアウト用
+========================================= */
+body {
+  background-color: #ffffff;
+  font-family: "メイリオ", Meiryo;
+}
+
+div#wrapper {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+div#border {
+  border-bottom: 5px solid #6d453d;
+}
+
+/* ========================================
+    ヘッダー用
+========================================= */
+
+header {
+  background-color: #6d453d;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header h1 {
+  padding: 40px 0 30px 0;
+  text-align: center;
+}
+
+header nav {
+  margin-left: 10px;
+}
+
+header nav ul li {
+  float: left;
+  margin-right: 50px;
+}
+
+.sns {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sns ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+/* ========================================
+    メイン画像用
+========================================= */
+
+div#main {
+  width: 960px;
+  margin: 200px auto 60px;
+}
+
+div#main p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.slider {
+  border-top: 30px solid #6d453d;
+  border-bottom: 30px solid #6d453d;
+}
+
+.slider-text {
+  position: absolute;
+  /* テキスト要素に絶対位置を指定 */
+  top: 50%;
+  left: 50%;
+  /* 左端を親要素の中央に合わせる */
+  transform: translate(-50%, -50%);
+  /* テキストを中央に配置するためのトランスフォーム */
+  z-index: 2;
+}
+
+/* ========================================
+    メニュー
+========================================= */
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 60px auto;
+}
+
+.grid {
+  display: grid;
+  width: 500px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.grid p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.menu_text {
+  margin: 200px 100px;
+  line-height: 30px;
+}
+
+.menu_text dt {
+  margin-bottom: 10px;
+}
+
+/* ========================================
+    メニュー
+========================================= */
+
+#access {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 60px auto;
+}
+
+.access_text {
+  margin: 100px 80px;
+  line-height: 30px;
+}
+
+.access_text img {
+  margin-bottom: 10px;
+}
+
+/* ========================================
+    フッター用
+========================================= */
+
+footer {
+  width: 100%;
+  background-color: #6d453d;
+  text-align: center;
+  line-height: 100px;
+}
